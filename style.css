@@ -1,1 +1,58 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"style.css"}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-container-top {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-container-top .logo {
+  margin: 10px;
+}
+@media (max-width: 768px) {
+  .header-container-top .search {
+    display: none;
+  }
+}
+.header-container-top .slogan {
+  text-align: end;
+  margin: 10px;
+}
+.header-container-top .slogan .header-slogan {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.header-container-bot {
+  background-color: #2D4059;
+}
+.header-container-bot ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  gap: 10px;
+  padding: 30px;
+  margin: 30 0 0 0;
+}
+.header-container-bot ul li {
+  list-style: none;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.header-container-bot ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.header-container-bot ul li a i {
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
